@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 & JavaScript Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Demo</h1>
+        
+        <div class="preferences">
+            <h2>User Preferences</h2>
+            <form id="preferences-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                
+                <label for="theme">Theme:</label>
+                <select id="theme" name="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+                
+                <label for="animation-speed">Animation Speed:</label>
+                <select id="animation-speed" name="animation-speed">
+                    <option value="slow">Slow</option>
+                    <option value="normal">Normal</option>
+                    <option value="fast">Fast</option>
+                </select>
+                
+                <button type="submit" class="btn save-btn">Save Preferences</button>
+            </form>
+        </div>
+        
+        <div class="animation-demo">
+            <h2>Animation Playground</h2>
+            <div class="animated-box" id="animated-box"></div>
+            <button class="btn animate-btn">Trigger Animation</button>
+            <button class="btn reset-btn">Reset Animation</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
