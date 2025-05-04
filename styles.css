@@ -1,0 +1,141 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Theme variations */
+body.light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.blue {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animate-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.animate-btn:hover {
+    background-color: #0b7dda;
+    transform: scale(1.05);
+}
+
+.reset-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #da190b;
+    transform: rotate(5deg);
+}
+
+/* Animation box */
+.animated-box {
+    width: 150px;
+    height: 150px;
+    background-color: #ff5722;
+    margin: 20px auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Animation definitions */
+@keyframes slideAndBounce {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    25% {
+        transform: translateX(200px) rotate(90deg);
+        background-color: #ff9800;
+    }
+    50% {
+        transform: translateX(200px) translateY(100px) rotate(180deg);
+        background-color: #ffeb3b;
+    }
+    75% {
+        transform: translateX(0) translateY(100px) rotate(270deg);
+        background-color: #8bc34a;
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(360deg);
+        background-color: #2196f3;
+    }
+}
+
+/* Animation speed variations */
+.slow {
+    animation-duration: 3s;
+}
+
+.normal {
+    animation-duration: 1.5s;
+}
+
+.fast {
+    animation-duration: 0.5s;
+}
+
+/* Form styles */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
